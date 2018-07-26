@@ -14,6 +14,7 @@ const path = require('path');
  * @property {Object} securityDefinitions - 安全验证，具体参考swagger官方文档
  * @property {Boolean} enableSecurity - 是否使用安全验证
  * @property {Boolean} enable - swagger-ui是否可以访问
+ * @property {String} suffix - 扫描文件的后缀
  */
 exports.swaggerdoc = {
   dirScanner: './app/controller',
@@ -44,6 +45,7 @@ exports.swaggerdoc = {
   },
   enableSecurity: false,
   enable: true,
+  suffix: '.js',
 };
 
 exports.static = {
